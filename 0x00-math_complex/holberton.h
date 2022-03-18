@@ -3,14 +3,15 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 /**
- * struct complex_i - Structure to save Poppy information
+ * struct complex - Structure to save Poppy information
  * @re: real part
  * @im: imaginary part
  */
 
-typedef struct complex_i
+typedef struct complex
 {
 	double re;
 	double im;
