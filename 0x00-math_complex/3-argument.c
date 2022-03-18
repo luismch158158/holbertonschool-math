@@ -13,7 +13,8 @@ double argument(complex c)
 {
 	double arg = 0;
 
-	arg = atan2(c.im, c.re);
+	if (c.re != 0)
+		arg = atan2(c.im, c.re);
 
 	return (arg);
 }
