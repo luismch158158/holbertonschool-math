@@ -15,11 +15,11 @@ void display_complex_number(complex c)
 	}
 	else if (c.im == 1)
 	{
-		printf("%.9g + i\n", c.re);
+		printf("%.9g + i", c.re);
 	}
 	else if (c.im == 0)
 	{
-		printf("%.9g\n", c.re);
+		printf("%.9g", c.re);
 	}
 	else if (c.im < 0)
 	{
@@ -29,7 +29,8 @@ void display_complex_number(complex c)
 	{
 		printf("%.9g - i", c.re);
 	}
-
 	else
-		printf("%.9g + %.9gi\n", c.re, c.im);
+		printf("%.9g + %.9gi", c.re, c.im);
+
+	printf("\n");
 }
